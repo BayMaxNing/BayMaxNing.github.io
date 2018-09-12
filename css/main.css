@@ -665,8 +665,8 @@ blockquote.style1{
 blockquote.style2{
 	text-indent: 23px;
 	margin-bottom:33px;
-	font-size:16px;
-	font-style:italic;
+	font-size:15px;
+	/*font-style:italic;*/
 	border-left:3px solid #555;
 	display:block;
 	padding-left:10px;

@@ -92,7 +92,7 @@ color:#23231c;
 				<li class="active"><span class="fa fa-edit"></span><span class="text">blog.csdn.net/ningyuxuan123</span></li>
 				<li class="active"><span class="fa fa-github-alt"></span><span class="text">https://baymaxning.github.io</span></li>
 			</ul>
-			<br/><br/>
+			<br/>
 			<h1>/ 教育背景</h1>
 			<ul class="tabs clearfix teach-language" style="margin-left:-61px">
 				<li class="active"><span class="item">学历学位：</span> <span class="content">本科学士学位</span></li>
@@ -101,7 +101,7 @@ color:#23231c;
 				<li class="active"><span class="item">毕业时间：</span> <span class="content">2019/06</span></li>
 
 			</ul>
-			<br/><br/>
+			<br/>
 			<h1>/荣誉奖项 </h1>
 			<ul class="tabs clearfix teach-language" style="margin-left:-61px">
 				<li class="active"><span class="item">2017.06荣获校二等奖学金</span></li>
@@ -195,13 +195,13 @@ margin-top:8px;
 						<ol id="techlist" style="margin-top:20px">		
 <li>Linux：熟悉Redhat/Centos系统以及常用Linux命令、用户和文件管理；熟悉Linux shell环境，能够编写shell脚本实现服务的自动配置，熟悉运用gawk、sed等脚本辅助工具操作文件；掌握常用服务配置（日志转储、高级网络配置、DHCP、DNS、NFS、FTP/VSFTP等）；</li>
 <li>Nginx: 
-能够通过nginx实现web应用搭建、负载均衡以及反向代理配置，利用nginx+tomcat+memcached实现过信息的交叉存储；</li>
+Web应用搭建、负载均衡、反向代理配置，利用nginx+tomcat+memcached实现过信息的交叉存储；</li>
 <li>Python：熟悉Python常用模块的使用，熟悉pycharm下python的（远程）开发与调试以及脚本编写；有nginx + uWSGI python web应用架构经验；</li>	
 <li>Git：熟悉版本控制工具git在项目开发中的使用，熟悉github开发流程，崇敬开源；</li>
 <li>DataBase：熟悉常用SQL语句，熟悉MySQL系统，掌握MySQL的备份与还原，主从复制（同步、半同步），读写分离、高可用；熟悉非关系型数据库redis的主从高可用、作缓存服务器搭建配置；</li>
-<li>运维监控：熟悉负载均衡、高可用集群搭建配置，有RHCS部署经验；有SaltStack自动部署HAProxy+Nginx负载均衡web集群经验。熟悉zabbix监控软件的部署与常用监控配置(Zabbix监控Nginx、MySQL)；了解 elasticsearch集群搭建和基本配置使用</li>
+<li>运维监控：熟悉负载均衡、高可用集群搭建配置，有RHCS部署经验；有SaltStack自动部署HAProxy+Nginx负载均衡web集群经验。熟悉zabbix监控软件的部署与常用监控配置<!-- (Zabbix监控Nginx、MySQL) -->；了解 elasticsearch集群搭建和基本配置使用</li>
 <li>Docker：能够使用docker compose搭建高可用负载均衡web集群，有单应用搭建、网络管理、镜像封装实践；有docker原生集群部署经验；</li>
-<li>OpenStack：接触过OpenStack实验环境，能够实现涉及基本组件的OpenStack平台搭建配置；</li>
+<!-- <li>OpenStack：接触过OpenStack实验环境，能够实现涉及基本组件的OpenStack平台搭建配置；</li> -->
 <li>MFS：能够利用mfs实现文件的分布式存储管理，并利用fence实现mfs的高可用；</li>
 </ol>
 
@@ -237,10 +237,10 @@ margin-top:8px;
 							
 <h1>/ 项目经验</h1>
 <hgroup>
-										<h4>1、SaltStack实现一键自动化部署高可用负载均衡集群
-									</h4>
+										<h4>1、SaltStack实现一键自动化部署高可用负载均衡集群</h4>
+										<h6>项目简介：</h6>
 <blockquote class="style2">
-模拟在高访问量的网站应用中，为了加快响应提升用户体验、避免后端单主机因为短时间承受巨大访问压力可能导致的瘫痪故障，便利用Nginx调度实现了负载均衡集群；为了解决调度节点的单点故障，又使用了haproxy来进行了高可用配置，保证业务的连续。考虑到目前在许多公司中服务器都是以集群形式存在的，不可能一个个手动配置，为了方便统一部署和管理，便集成了saltstack，通过使用pillar键值和jinja模板来确定主备以及配置文件的模板生成，编写自动化配置文件以及相应的运行脚本，最终完成了一键推送。虽然这次实验项目涉及主机较少并且网络环境也不复杂，但是却让我认识到了运维中最重要的一点：保证业务连续性；并且对于自动化运维的理念有了更深的理解，希望自己能在运维的路上好好贯彻这一点。
+模拟在高访问量的网站应用中，为了加快响应提升用户体验、避免后端单主机因为短时间承受巨大访问压力可能导致的瘫痪故障，便利用 Nginx 调度实现了负载均衡集群；为了解决调度节点的单点故障，又使用了 haproxy来进行了高可用配置，保证业务的连续。考虑到目前在许多公司中服务器都是以集群形式存在的，不可能一个个手动配置，为了方便统一部署和管理，便集成了 saltstack，通过使用 pillar 键值和 jinja 模板来确定主备以及配置文件的模板生成，编写自动化配置文件以及相应的运行脚本，最终完成了一键推送。虽然这次实验项目涉及主机较少并且网络环境也不复杂，但是却让我认识到了运维中最重要的一点：保证业务连续性；并且对于自动化运维的理念有了更深的理解，希望自己能在运维的路上好好贯彻这一点。
 </blockquote>
 
 								</hgroup>
@@ -248,7 +248,7 @@ margin-top:8px;
 								<hgroup>
 									<h4>2、基于JAVA面向对象编程实现的飞机大战游戏</h4>
 									<h6>项目简介：</h6>
-									<blockquote class="style2">此项目是我开始学习Java编程的入手程序，游戏基本是基于面向对象的思想实现，通过类的创建、继承、多态、接口的实现创造了敌我对象以及对应的行为，加上游戏逻辑控制最终实现了鼠标控制战机移动以及射击随机出现和移动的敌人。此项目虽然算不上是规范成熟，但让我对java和面向对象编程思想有了实际的掌握认知，对于一个项目的构建和实现有了实践经验。</blockquote>
+									<blockquote class="style2">此项目是我开始学习Java编程的入手程序，游戏基本是基于面向对象的思想实现，通过类的创建、继承、多态、接口的实现创造了敌我对象以及对应的行为，加上游戏逻辑控制最终实现了鼠标控制战机移动以及射击随机出现和移动的敌人。此项目虽然算不上是规范成熟，但让我对 java 和面向对象编程思想有了实际的掌握认知，对于一个项目的构建和实现有了实践经验。</blockquote>
 
 								</hgroup>
 
